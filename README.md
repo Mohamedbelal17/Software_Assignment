@@ -1,4 +1,4 @@
-# Software Assignment
+<img width="1136" height="801" alt="image" src="https://github.com/user-attachments/assets/d5f4ab3f-89e5-4eff-b360-c43d62a5b815" /># Software Assignment
 
 # How to Run
  
@@ -55,4 +55,5 @@ npm run dev
  
 ---
 
-![image](https://github.com/Mohamedbelal17/Software_Assignment/blob/main/image.png)
+<img width="1136" height="801" alt="image" src="https://github.com/user-attachments/assets/94c23fd9-f218-4b7d-a6cd-fddbfa578a42" />
+
