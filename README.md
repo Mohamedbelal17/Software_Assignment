@@ -1,4 +1,3 @@
-<img width="1136" height="801" alt="image" src="https://github.com/user-attachments/assets/d5f4ab3f-89e5-4eff-b360-c43d62a5b815" /># Software Assignment
 
 # How to Run
  
