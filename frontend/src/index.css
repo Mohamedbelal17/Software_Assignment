@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary:       #6d28d9;
+  --primary-light: #8b5cf6;
+  --surface:       #ffffff;
+  --surface-2:     #f8fafc;
+  --border:        #e2e8f0;
+  --text:          #0f172a;
+  --muted:         #64748b;
+  --success:       #10b981;
+  --danger:        #ef4444;
+  --warning:       #f59e0b;
+  --sidebar-w:     240px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--surface-2);
+  color: var(--text);
+  direction: rtl;
+  min-height: 100vh;
+}
+
+/* ── sidebar ── */
+.sidebar {
+  width: var(--sidebar-w);
+  height: 100vh;
+  position: fixed;
+  top: 0; right: 0;
+  background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%);
+  z-index: 50;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transition: transform .3s ease;
+}
+.sidebar--closed { transform: translateX(100%); }
+
+/* ── card ── */
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+
+/* ── spinner ── */
+.spinner {
+  width: 36px; height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--primary-light);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── table ── */
+table  { width: 100%; border-collapse: collapse; }
+thead tr { background: #f1f5f9; }
+th { padding: 10px 14px; text-align: right; font-size: 12px; font-weight: 700;
+     color: var(--muted); letter-spacing: .04em; }
+td { padding: 11px 14px; font-size: 14px; border-bottom: 1px solid var(--border); }
+tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background: #f8fafc; }
+
+/* ── input ── */
+.input {
+  width: 100%; padding: 10px 14px;
+  border: 1px solid var(--border); border-radius: 8px;
+  font-family: inherit; font-size: 14px; direction: rtl; outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.input:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(59,130,246,.12);
+}
+
+/* ── btn ── */
+.btn {
+  padding: 9px 20px; border-radius: 8px; border: 1px solid var(--border);
+  font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.btn-primary:hover { background: #1e3a8a; }
+.btn-outline { background: var(--surface); color: var(--text); }
+.btn-outline:hover { background: #f1f5f9; }
+.btn-active  { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* ── scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
