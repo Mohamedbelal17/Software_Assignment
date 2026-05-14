@@ -1,4 +1,3 @@
-<img width="1876" height="960" alt="Home" src="https://github.com/user-attachments/assets/22a884d3-c9ac-411b-a8ad-d7e29244bbae" />
 # How to Run
  
 ## Backend
@@ -55,9 +54,8 @@ npm run dev
 ---
 
 <img width="1136" height="801" alt="image" src="https://github.com/user-attachments/assets/94c23fd9-f218-4b7d-a6cd-fddbfa578a42" />
-----
+
 ## Frontend Images
-```bash
 <img width="1876" height="960" alt="Home" src="https://github.com/user-attachments/assets/f4d69516-58d3-4c47-a584-598b29ecbb00" />
 <img width="1813" height="684" alt="upload" src="https://github.com/user-attachments/assets/6421d24b-c794-4c70-b9f7-d74c18fea682" />
 <img width="1875" height="963" alt="top_sales" src="https://github.com/user-attachments/assets/489a22cf-9796-463a-9682-eda7664c1892" />
